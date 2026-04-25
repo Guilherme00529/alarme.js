@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cronometro java scrpt</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+    <script>
+        for (let i = 0; i < 100; i++) {
+          const star = document.createElement('div');
+          star.classList.add('star');
+          star.style.top = `${Math.random() * 100}vh`;
+          star.style.left = `${Math.random() * 100}vw`;
+          star.style.animationDelay = `${Math.random() * 3}s`;
+          document.body.appendChild(star);
+        }
+      </script>
+
+    
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+      
+        <!-- o resto do seu código continua aqui -->
+      
+     
+    <audio id="sound" src="imminent2-80967.mp3" style="display: nome;"></audio>
+ 
+     <div class="container">
+        <h2>Minutos:</h2>
+        <select id="minutos" nome="minutos"></select>
+
+        <h2>Segundos</h2>
+        <select id="segundos" nome="segundos"></select>
+     </br>
+    </br>
+        <button id="comecar">Começar</button>
+
+
+
+        <div id="display">
+            <h3></h3>
+        </div>
+     </div>
+     <script src="script.js"></script>
+
+</body>
+</html>
